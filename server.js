@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
-import { io } from "socket.io-client";
+import pkg from "socket.io-client";
+const { io } = pkg;
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
